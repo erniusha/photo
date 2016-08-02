@@ -1,0 +1,174 @@
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background:url(img/55.jpg) no-repeat;
+    background-size:cover;
+}
+.yt{
+    width:800px;
+    height:400px;
+    box-shadow: 1px 1px 10px #000;
+    margin:80px auto;
+}
+.yt li{
+    width:196px;
+    height:196px;
+    float: left;
+    margin:2px;
+    position: relative;
+    overflow: hidden;
+}
+.yt li a{
+    width:100%;
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: 10;
+}
+.yt img{
+    width:100%;
+    height:100%;
+    transition: all 0.8s ease;
+}
+a:hover img{
+    transform:scale(1.2,1.2)
+}
+.an{
+    width:800px;
+    height:30px;
+    margin: 70px auto;
+}
+input{
+    float: right;
+    height:30px;
+    line-height:30px;
+    cursor:pointer;
+    border-radius: 5px;
+}
+.yt li a:hover + .info{
+    transform: translateY(0);
+}
+.yt li .info{
+    transform:translateY(100%);
+    transition: all 0.8s ease;
+    width:100%;
+    height:50px;
+    background:rgba(255,255,255,0.7);
+    position: absolute;
+    left:0;
+    bottom:0;
+    line-height:50px;
+    z-index: 20;
+    text-align: center;
+}
+.cart{
+    transition:all 0.8s ease;
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: 500;
+    width:100%;
+    height:0;
+    opacity: 0;
+    background:rgba(0,0,0,0.4);
+}
+.cart .xianshi{
+    width:300px;
+    height:100px;
+    background:#fff;
+    position: fixed;
+    left:50%;
+    top:30%;
+    margin-left: -150px;
+    margin-top: -50px;
+    z-index: 100000;
+    opacity: 0;
+    text-align: center;
+    line-height:100px;
+    font-size: 22px;
+    transition:all 0.6s ease;
+}
+.show{
+    height:100%;
+    opacity: 1;
+}
+.cart .rongqi{
+    position: relative;
+    width:600px;
+    height:100%;
+    margin:auto;
+    background:rgba(255,255,255,0.4);
+}
+.rongqi img{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    margin:auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.close{
+    position: absolute;
+    right:200px;
+    top:50px;
+    width:40px;
+    height:40px;
+    background:yellow;
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
+    line-height: 500000px;
+    cursor: pointer;
+}
+.close img{
+    width:100%;
+    height:100%;
+}
+.dom{
+    margin:0 auto;
+    width:800px;
+    height:600px;
+    position: relative;
+    overflow: hidden;
+    border:1px solid red;
+}
+.dom:hover .you{
+    transform:translateX(-100%);
+    transition:all 0.8s ease;
+}
+.dom:hover .zuo{
+    transform:translateX(100%);
+    transition:all 0.8s ease;
+}
+.dom .circle{
+    transition: all 0.8s ease;
+    position: absolute;
+    border-radius: 50%;
+}
+.dom .rongqi{
+    position: absolute;
+    left:50%;
+    margin-left: -250px;
+    width:500px;
+    height:100px;
+    z-index: 5000;
+    background: rgba(0,0,0,0.5);
+}
+.dom .rongqi .circle{
+    position: static;
+    float: left;
+    margin:5px;
+}
+.wrap{
+    position: absolute;
+    width:30px;
+    height:30px;
+    border:1px solid #000;
+    z-index: 100;
+}
